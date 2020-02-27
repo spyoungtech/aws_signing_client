@@ -1,6 +1,7 @@
 package aws_signing_client
 
 import (
+	"context"
 	"bytes"
 	"io"
 	"io/ioutil"
