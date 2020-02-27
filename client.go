@@ -11,7 +11,7 @@ import (
 )
 
 type AWSSigner interface {
-	Sign(r *http.Request, body io.ReadSeeker, service, region string, signTime time.Time) (http.Header, error)
+	Sign(ctx context.Context, r *http.Request, body io.ReadSeeker, service, region string, signTime time.Time) (http.Header, error)
 }
 
 type (
